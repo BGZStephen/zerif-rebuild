@@ -23,3 +23,10 @@ var toggle = () => {
 }
 
 navToggle.addEventListener(`click`, toggle);
+
+$(document).ready(function(){
+  $('.testimonials-items-container').slick({
+    arrows: false,
+    dots: true
+  });
+});

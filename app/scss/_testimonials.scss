@@ -1,0 +1,65 @@
+.testimonials-container {
+  @include flex-col;
+  padding: $std-container-padding;
+  background: darken($hr-blue, 25%);
+  color: white;
+  > p {
+    margin: 10px 0;
+    font-size: 0.9em;
+  }
+}
+
+.testimonials-items-container {
+  width: 100%;
+}
+
+.testimonials-item {
+  background: white;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 20px 10px;
+  padding: 20px 15px;
+  width: 100%;
+  > img {
+    display: none;
+  }
+  > i {
+    width: 30%;
+    font-size: 2em;
+    margin-top: 10px;
+    color: darken($hr-blue, 25%);
+  }
+  > .signature {
+    display: inline;
+    width: 50%;
+  }
+}
+
+// slick sytles
+
+.slick-dots {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  list-style: none; }
+
+.slick-dots li button {
+  background-color: #eee;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  margin: 20px 5px;
+}
+
+li.slick-active button {
+  background-color: darken($hr-blue, 25%);
+  color: darken($hr-blue, 25%);
+  border: 2px solid white;
+}
