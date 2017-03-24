@@ -11,6 +11,7 @@ $description-font-size: 0.9em;
 $font-grey: #808080;
 $font-dark-grey: #313131;
 $font-white: white;
+$font-orange: #e96656;
 $button-orange: #e96656;
 $button-orange-hover: #cb4332;
 $button-green: #1e9e6b;
@@ -21,8 +22,12 @@ $hr-orange: #e96656;
 $hr-green: #34d293;
 $hr-blue: #3ab0e2;
 $hr-yellow: #f7d861;
-$footer-bg: #272727;
+$dark-bg: #272727;
 
 // heights
 
 $navbar-height: 80px;
+
+// paddings
+
+$std-container-padding: 60px 20px;

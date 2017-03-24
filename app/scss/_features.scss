@@ -1,0 +1,27 @@
+.features-container {
+  @include flex-col;
+  padding: $std-container-padding;
+}
+
+.features-items-container {
+  margin-top: 40px;
+}
+
+.features-item {
+  margin-bottom: 60px;
+  > img {
+    margin: 40px auto;
+  }
+  > h3 {
+    font-size: 1.1em;
+  }
+  > hr {
+    margin: 10px auto 20px;
+    width: 30%;
+  }
+  > p {
+    font-size: 0.9em;
+    color: $font-grey;
+    line-height: 1.8;
+  }
+}

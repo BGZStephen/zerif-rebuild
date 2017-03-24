@@ -1,0 +1,24 @@
+.parallax-container {
+  @include flex-col;
+  background: linear-gradient(
+      rgba(52,210,147,0.85),
+      rgba(52,210,147,0.85)
+    ),
+    url("../images/background1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  >p {
+    color: white;
+    font-size: 1.4em;
+  }
+  padding: $std-container-padding;
+
+}
+
+.button-dark-green {
+  background: $button-green-dark;
+  text-transform: uppercase;
+  margin: 40px auto 0;
+}

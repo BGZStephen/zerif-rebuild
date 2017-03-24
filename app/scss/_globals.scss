@@ -4,3 +4,29 @@
   box-sizing: border-box;
   font-family: $primary-font;
 }
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.hr--orange {
+  border-top: 2px solid $hr-orange;
+}
+
+.hr--green {
+  border-top: 2px solid $hr-green;
+}
+
+.hr--blue {
+  border-top: 2px solid $hr-blue;
+}
+
+.hr--yellow {
+  border-top: 2px solid $hr-yellow;
+}

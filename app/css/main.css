@@ -4,6 +4,26 @@
   box-sizing: border-box;
   font-family: "Montserrat", Helvetica, sans-serif; }
 
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 700; }
+
+h3 {
+  text-transform: uppercase; }
+
+.hr--orange {
+  border-top: 2px solid #e96656; }
+
+.hr--green {
+  border-top: 2px solid #34d293; }
+
+.hr--blue {
+  border-top: 2px solid #3ab0e2; }
+
+.hr--yellow {
+  border-top: 2px solid #f7d861; }
+
 .navbar-container {
   width: 100%; }
 
@@ -37,4 +57,158 @@
   display: none; }
 
 .intro-container {
-  background-image: url("../images/bg.jpg"); }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 150px 10px;
+  text-align: center; }
+  .intro-container > h1 {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    font-size: 1.5em; }
+    .intro-container > h1 > span {
+      color: #e96656; }
+
+.button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 10px auto;
+  padding: 15px 25px;
+  font-size: 1em; }
+
+.button--orange {
+  background: #e96656; }
+
+.button--green {
+  background: #1e9e6b; }
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 60px 20px; }
+
+.features-items-container {
+  margin-top: 40px; }
+
+.features-item {
+  margin-bottom: 60px; }
+  .features-item > img {
+    margin: 40px auto; }
+  .features-item > h3 {
+    font-size: 1.1em; }
+  .features-item > hr {
+    margin: 10px auto 20px;
+    width: 30%; }
+  .features-item > p {
+    font-size: 0.9em;
+    color: #808080;
+    line-height: 1.8; }
+
+.parallax-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background: linear-gradient(rgba(52, 210, 147, 0.85), rgba(52, 210, 147, 0.85)), url("../images/background1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 20px; }
+  .parallax-container > p {
+    color: white;
+    font-size: 1.4em; }
+
+.button-dark-green {
+  background: #14a168;
+  text-transform: uppercase;
+  margin: 40px auto 0; }
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 60px 20px;
+  background: #272727;
+  color: white; }
+  .about-container > p {
+    font-size: 0.9em; }
+
+.about-content-container {
+  margin: 20px 0; }
+
+.about-content-intro {
+  font-weight: 200;
+  font-size: 1.8em;
+  line-height: 1.5;
+  margin: 20px 0; }
+
+.about-description {
+  font-weight: 200;
+  font-size: 0.9em;
+  text-align: center; }
+
+.about-radials-container {
+  width: 100%;
+  margin: 70px 0 0; }
+
+.about-radials-item {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 15px 0; }
+
+.container {
+  width: 80px;
+  height: 80px;
+  margin: 0 15px; }
+
+.prec {
+  top: 25px;
+  position: relative;
+  font-size: 1em; }
+
+.circle {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #272727; }
+
+.border {
+  position: relative;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%; }
+
+.border-orange {
+  background-color: #272727;
+  background-image: linear-gradient(90deg, transparent 50%, #e96656 50%), linear-gradient(390deg, #e96656 50%, transparent 50%); }
+
+.border-green {
+  background-color: #272727;
+  background-image: linear-gradient(90deg, transparent 50%, #34d293 50%), linear-gradient(405deg, #34d293 50%, transparent 50%); }
+
+.border-blue {
+  background-color: #272727;
+  background-image: linear-gradient(90deg, transparent 50%, #3ab0e2 50%), linear-gradient(395deg, #3ab0e2 50%, transparent 50%); }
+
+.border-yellow {
+  background-color: #272727;
+  background-image: linear-gradient(90deg, transparent 50%, #f7d861 50%), linear-gradient(425deg, #f7d861 50%, transparent 50%); }
