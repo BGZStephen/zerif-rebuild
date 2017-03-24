@@ -1,0 +1,27 @@
+.footer-container {
+  @include flex-col;
+  padding: 60px 20px 0;
+  background: $dark-bg;
+  color: white;
+}
+
+.footer-items-container {
+  width: 100%;
+}
+
+.footer-item {
+  width: 100%;
+  > p {
+    margin: 10px 0 60px;
+    color: $font-grey;
+  }
+  > .font--orange {
+    color: $hr-orange;
+  }
+  > .font--green {
+    color: $hr-green;
+  }
+  > .font--blue {
+    color: $hr-blue;
+  }
+}

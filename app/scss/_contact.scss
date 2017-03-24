@@ -1,0 +1,27 @@
+.contact-container {
+  @include flex-col;
+  background: linear-gradient(
+      rgba(0,0,0,0.35),
+      rgba(0,0,0,0.35)
+    ),
+    url("../images/contact-bg.jpg");
+  background-position: center;
+  color: white;
+  padding: $std-container-padding;
+  > p {
+    margin: 10px auto 30px;
+  }
+}
+
+.contact-form {
+  width: 100%;
+  padding: 0 10px;
+  > input, > textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  > textarea {
+    min-height: 120px;
+  }
+}

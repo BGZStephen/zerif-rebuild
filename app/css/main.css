@@ -357,3 +357,49 @@ li.slick-active button {
     margin: 20px 0;
     color: #808080;
     line-height: 1.6; }
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../images/contact-bg.jpg");
+  background-position: center;
+  color: white;
+  padding: 60px 20px; }
+  .contact-container > p {
+    margin: 10px auto 30px; }
+
+.contact-form {
+  width: 100%;
+  padding: 0 10px; }
+  .contact-form > input, .contact-form > textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; }
+  .contact-form > textarea {
+    min-height: 120px; }
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 60px 20px 0;
+  background: #272727;
+  color: white; }
+
+.footer-items-container {
+  width: 100%; }
+
+.footer-item {
+  width: 100%; }
+  .footer-item > p {
+    margin: 10px 0 60px;
+    color: #808080; }
+  .footer-item > .font--orange {
+    color: #e96656; }
+  .footer-item > .font--green {
+    color: #34d293; }
+  .footer-item > .font--blue {
+    color: #3ab0e2; }
