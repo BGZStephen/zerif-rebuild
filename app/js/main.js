@@ -29,4 +29,8 @@ $(document).ready(function(){
     arrows: false,
     dots: true
   });
+  $('.blog-items-container').slick({
+    arrows: false,
+    dots: true
+  });
 });

@@ -1,0 +1,14 @@
+.call-to-action-container {
+  @include flex-col;
+  padding: 60px 25px;
+  background: $hr-orange;
+  color: white;
+  text-align: center;
+  > p {
+    font-size: 1.3em;
+  }
+  > button {
+    background: darken($hr-orange, 5%);
+    margin: 30px auto 0;
+  }
+}

@@ -1,0 +1,43 @@
+.blog-container {
+  @include flex-col;
+  padding: $std-container-padding;
+  > p {
+    font-size: 0.9em;
+  }
+}
+
+.blog-items-container {
+  margin-top: 30px;
+  > ul.slick-dots li button {
+    background-color: white;
+    border: 2px solid $hr-orange;
+    color: white;
+  }
+
+  > ul > li.slick-active button {
+    background-color: $hr-orange;
+    color: $hr-orange;
+    border: $hr-orange;
+  }
+}
+
+.blog-item {
+  width: 100%;
+  padding: 0 5px;
+  >img {
+    width: 60%;
+    margin: 15px auto;
+  }
+  > h5 {
+    font-size: 1em;
+  }
+  > hr {
+    margin: 15px auto;
+    width: 60%;
+  }
+  > p {
+    margin: 20px 0;
+    color: $font-grey;
+    line-height: 1.6;
+  }
+}
