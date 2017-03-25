@@ -29,14 +29,21 @@ h5 {
 
 .navbar-container {
   width: 100%; }
+  @media (min-width: 768px) {
+    .navbar-container > h1 {
+      font-size: 3em; } }
 
 .navbar {
   padding: 15px 20px 12px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
   position: relative; }
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none; } }
 
 .navbar-menu {
   top: 10px;
@@ -46,6 +53,14 @@ h5 {
   overflow: hidden;
   position: relative;
   transition: max-height 0.7s ease-out; }
+  @media (min-width: 768px) {
+    .navbar-menu {
+      display: flex;
+      top: 0;
+      height: auto;
+      max-height: 100px;
+      overflow: visible;
+      width: auto; } }
 
 .navbar-menu-list {
   list-style: none; }
@@ -55,6 +70,13 @@ h5 {
   .navbar-menu-list > a > li {
     display: block;
     padding: 15px 10px; }
+  @media (min-width: 768px) {
+    .navbar-menu-list {
+      display: flex;
+      align-items: center; }
+      .navbar-menu-list > a > li {
+        display: block;
+        padding: 0px 10px; } }
 
 .features {
   display: none; }

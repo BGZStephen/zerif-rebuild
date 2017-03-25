@@ -1,6 +1,6 @@
 .navbar-container {
   width: 100%;
-
+  }
 }
 
 .navbar {
@@ -8,8 +8,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
   position: relative;
+}
+
+.navbar-toggle {
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .navbar-menu {
@@ -20,6 +26,14 @@
   overflow: hidden;
   position: relative;
   transition: max-height 0.7s ease-out;
+  @media (min-width: 768px) {
+    display: flex;
+    top: 0;
+    height: auto;
+    max-height: 100px;
+    overflow: visible;
+    width: auto;
+  }
 }
 
 .navbar-menu-list {
@@ -31,6 +45,14 @@
   > a > li {
     display: block;
     padding: 15px 10px;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    > a > li {
+      display: block;
+      padding: 0px 10px;
+    }
   }
 }
 

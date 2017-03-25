@@ -6,14 +6,12 @@ var menuList = document.getElementsByClassName(`navbar-menu`)[0]
 
 var toggle = () => {
   if(menuList.style.maxHeight != "500px") {
-    console.log(`expand`);
     menuList.style.maxHeight = "500px";
     navToggleBackground.classList.remove(`fa-square-o`);
     navToggleBackground.classList.add(`fa-square`);
     navToggleBackground.style.color = `#e96656`;
-        navToggleBars.style.color = `white`;
+    navToggleBars.style.color = `white`;
   } else {
-    console.log(`collapse`);
     menuList.style.maxHeight = 0;
     navToggleBackground.style.color = `black`;
     navToggleBackground.classList.remove(`fa-square`);
