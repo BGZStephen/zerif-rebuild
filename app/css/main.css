@@ -4,13 +4,18 @@
   box-sizing: border-box;
   font-family: "Montserrat", Helvetica, sans-serif; }
 
+@media (min-width: 768px) {
+  h1 {
+    width: 100%; } }
+
 h2 {
   text-transform: uppercase;
   margin-bottom: 10px;
   font-weight: 700; }
   @media (min-width: 768px) {
     h2 {
-      width: 100%; } }
+      width: 100%;
+      font-size: 2em; } }
 
 h3 {
   text-transform: uppercase; }
@@ -34,6 +39,9 @@ h5 {
   width: 100%; }
 
 .navbar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 15px 20px 12px;
   display: flex;
   flex-wrap: wrap;
@@ -100,6 +108,9 @@ h5 {
     @media (min-width: 768px) {
       .intro-container > h1 {
         font-size: 3em; } }
+    @media (min-width: 1024px) {
+      .intro-container > h1 {
+        font-size: 3.5em; } }
     .intro-container > h1 > span {
       color: #e96656; }
   @media (min-width: 768px) {
@@ -140,6 +151,8 @@ h5 {
 
 .features-items-container {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-top: 40px; }
   @media (min-width: 768px) {
     .features-items-container {
@@ -197,22 +210,41 @@ h5 {
     font-size: 0.9em; }
 
 .about-content-container {
-  margin: 20px 0; }
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto; }
+  @media (min-width: 1024px) {
+    .about-content-container {
+      display: flex; } }
 
 .about-content-intro {
   font-weight: 200;
   font-size: 1.8em;
   line-height: 1.5;
   margin: 20px 0; }
+  @media (min-width: 768px) {
+    .about-content-intro {
+      font-size: 3.5em;
+      margin-bottom: 40px; } }
+  @media (min-width: 1024px) {
+    .about-content-intro {
+      margin-top: 0; } }
 
 .about-description {
   font-weight: 200;
   font-size: 0.9em;
   text-align: center; }
+  @media (min-width: 1024px) {
+    .about-description {
+      margin-top: 20px;
+      line-height: 2.2; } }
 
 .about-radials-container {
   width: 100%;
   margin: 70px 0 0; }
+  @media (min-width: 1024px) {
+    .about-radials-container {
+      margin-top: 0; } }
 
 .about-radials-item {
   align-items: center;
@@ -277,7 +309,11 @@ h5 {
 
 .team-items-container {
   width: 100%;
-  margin: 20px 0; }
+  max-width: 1200px;
+  margin: 20px auto; }
+  @media (min-width: 768px) {
+    .team-items-container {
+      display: flex; } }
 
 .team-item {
   margin: 60px 0;
@@ -297,6 +333,9 @@ h5 {
   .team-item > i {
     margin: 15px 5px;
     color: #808080; }
+  @media (min-width: 768px) {
+    .team-item {
+      width: 25%; } }
 
 .testimonials-container {
   display: flex;
@@ -311,7 +350,12 @@ h5 {
     font-size: 0.9em; }
 
 .testimonials-items-container {
-  width: 100%; }
+  width: 100%;
+  max-width: 1200px; }
+  @media (min-width: 768px) {
+    .testimonials-items-container {
+      width: 80%;
+      margin: 0 auto; } }
 
 .testimonials-item {
   background: white;
@@ -381,7 +425,9 @@ li.slick-active button {
     font-size: 0.9em; }
 
 .blog-items-container {
-  margin-top: 30px; }
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto 0; }
   .blog-items-container > ul.slick-dots li button {
     background-color: white;
     border: 2px solid #e96656;
@@ -421,6 +467,8 @@ li.slick-active button {
 
 .contact-form {
   width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
   padding: 0 10px; }
   .contact-form > input, .contact-form > textarea {
     width: 100%;
@@ -428,6 +476,25 @@ li.slick-active button {
     margin: 10px 0; }
   .contact-form > textarea {
     min-height: 120px; }
+    @media (min-width: 768px) {
+      .contact-form > textarea {
+        width: 100%;
+        padding: 15px; } }
+    @media (min-width: 768px) {
+      .contact-form > textarea {
+        min-height: 250px; } }
+  @media (min-width: 768px) {
+    .contact-form > input {
+      width: 32%;
+      padding: 15px; } }
+  @media (min-width: 768px) {
+    .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+  @media (min-width: 768px) {
+    .contact-form > button {
+      margin: 10px 0; } }
 
 .footer-container {
   display: flex;
@@ -439,7 +506,13 @@ li.slick-active button {
   color: white; }
 
 .footer-items-container {
-  width: 100%; }
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .footer-items-container {
+      display: flex;
+      justify-content: center; } }
 
 .footer-item {
   width: 100%; }
@@ -452,3 +525,6 @@ li.slick-active button {
     color: #34d293; }
   .footer-item > .font--blue {
     color: #3ab0e2; }
+  @media (min-width: 768px) {
+    .footer-item {
+      width: 33%; } }

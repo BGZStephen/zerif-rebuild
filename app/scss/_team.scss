@@ -9,7 +9,11 @@
 
 .team-items-container {
   width: 100%;
-  margin: 20px 0;
+  max-width: 1200px;
+  margin: 20px auto;
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .team-item {
@@ -34,5 +38,8 @@
   > i {
     margin: 15px 5px;
     color: $font-grey
+  }
+  @media (min-width: 768px) {
+    width: 25%;
   }
 }
