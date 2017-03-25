@@ -9,6 +9,9 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 10px;
   font-weight: 700;
+  @media (min-width: 768px) {
+    width: 100%;
+  }
 }
 
 h3 {

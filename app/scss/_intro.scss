@@ -11,9 +11,17 @@
     text-transform: uppercase;
     margin-bottom: 60px;
     font-size: 1.5em;
+    @media (min-width: 768px) {
+      font-size: 3em;
+    }
     > span {
       color: $font-orange;
     }
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -24,6 +32,9 @@
   margin: 10px auto;
   padding: 15px 25px;
   font-size: 1em;
+  @media (min-width: 768px) {
+    margin: 15px 25px;
+  }
 }
 
 .button--orange {
