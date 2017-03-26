@@ -21,4 +21,9 @@
   background: $button-green-dark;
   text-transform: uppercase;
   margin: 40px auto 0;
+  transition: background 0.5s ease;
+}
+
+.button-dark-green:hover {
+  background: $button-green-dark-hover;
 }

@@ -18,6 +18,7 @@
 
 .team-item {
   margin: 60px 0;
+  position: relative;
   width: 100%;
   > img {
     height: 180px;
@@ -37,9 +38,40 @@
   }
   > i {
     margin: 15px 5px;
-    color: $font-grey
+    color: $font-grey;
+    transition: color 0.5s ease;
+  }
+  > i:hover {
+    color: $hr-orange;
   }
   @media (min-width: 768px) {
     width: 25%;
+  }
+}
+
+.team-item:before {
+  @media (min-width: 1024px) {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    color: white;
+    line-height: 2;
+    padding: 20px;
+    width: 80%;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque";
+    background: $dark-bg;
+    z-index: 20;
+    transition: max-height 1s ease, opacity 0.2s ease;
+  }
+
+}
+
+.team-item:hover:before {
+  @media (min-width: 1024px) {
+    max-height: 300px;
+    opacity: 1;
   }
 }

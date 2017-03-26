@@ -42,8 +42,18 @@
 
 .button--orange {
   background: $button-orange;
+  transition: background 0.5s ease;
+}
+
+.button--orange:hover {
+  background: $button-orange-hover;
 }
 
 .button--green {
   background: $button-green;
+  transition: background 0.5s ease;
+}
+
+.button--green:hover {
+  background: $button-green-hover;
 }

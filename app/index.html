@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900" rel="stylesheet">
     <script src="https://use.fontawesome.com/614b1484fd.js"></script>
   </head>
-  <body>
+  <body id="home">
     <div class="navbar-container">
       <div class="navbar">
         <div class="logo">
-          <img src="images/logo.png">
+          <a href="#home"><img src="images/logo.png"></a>
         </div>
         <div class="navbar-toggle">
           <span class="fa-stack fa-lg">
@@ -23,20 +23,11 @@
         </div>
         <div class="navbar-menu">
           <ul class="navbar-menu-list">
-            <li class="features">Features
-              <ul class="features-list">
-                <a href="#"><li>About</li></a>
-                <a href="#"><li>Team</li></a>
-                <a href="#"><li>Testimonials</li></a>
-                <a href="#"><li>Contact</li></a>
-                <a href="#"><li>Blog</li></a>
-              </ul>
-            </li>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Team</li></a>
-            <a href="#"><li>Testimonials</li></a>
-            <a href="#"><li>Contact</li></a>
-            <a href="#"><li>Blog</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#team"><li>Team</li></a>
+            <a href="#testimnoials"><li>Testimonials</li></a>
+            <a href="#contact"><li>Contact</li></a>
+            <a href="#blog"><li>Blog</li></a>
           </ul>
         </div>
       </div>
@@ -51,25 +42,25 @@
       <p>What makes us great?</p>
       <div class="features-items-container">
         <div class="features-item">
-          <img src="images/parallax.png">
+          <img src="images/parallax.png" class="img--orange">
           <h3>Parallax Effect</h3>
           <hr class="hr hr--orange">
           <p>Create memorable pages with smooth parallax effects that everyone loves. Also, use our lightweight content slider offering you smooth and great-looking animations.</p>
         </div>
         <div class="features-item">
-          <img src="images/woo.png">
+          <img src="images/woo.png" class="img--green">
           <h3>Woocommerce</h3>
           <hr class="hr hr--green">
           <p>Build a front page for your WooCommerce store in a matter of minutes. The neat and clean presentation will help your sales and make your store accessible to everyone.</p>
         </div>
         <div class="features-item">
-          <img src="images/ccc.png">
+          <img src="images/ccc.png" class="img--blue">
           <h3>Custom Content Blocks</h3>
           <hr class="hr hr--blue">
           <p>Showcase your team, products, clients, about info, testimonials, latest posts from the blog, contact form, additional calls to action. Everything translation ready.</p>
         </div>
         <div class="features-item">
-          <img src="images/ti-logo.png">
+          <img src="images/ti-logo.png" class="img--yellow">
           <h3>Go pro for more features</h3>
           <hr class="hr hr--yellow">
           <p>Get new content blocks: pricing table, Google Maps, and more. Change the sections order, display each block exactly where you need it, customize the blocks with whatever colors you wish.</p>
@@ -80,7 +71,7 @@
       <p>Check out this cool parallax scrolling effect. Plus, you can change the background image.</p>
       <button class="button button-dark-green">Button</button>
     </div>
-    <div class="about-container">
+    <div id="about" class="about-container">
       <h2>About</h2>
       <p>Use this section to showcase important details about your business.</p>
       <div class="about-content-container">
@@ -134,7 +125,7 @@
         </div>
       </div>
     </div>
-    <div class="team-container">
+    <div id="team" class="team-container">
       <h2>Your Team</h2>
       <p>Prove that you have real people working for you, with some nice looking profile pictures and links to social media.</p>
       <div class="team-items-container">
@@ -180,7 +171,7 @@
         </div>
       </div>
     </div>
-    <div class="testimonials-container">
+    <div id="testimonials" class="testimonials-container">
       <h2>Testimonials</h2>
       <p>Get testimonials from your clients and then display them here.</p>
       <div class="testimonials-items-container">
@@ -208,7 +199,7 @@
       <p>Use these ribbons to display calls to action mid-page.</p>
       <button class="button button--orange">View Article</button>
     </div>
-    <div class="blog-container">
+    <div id="blog" class="blog-container">
       <h2>Blog / Latest News</h2>
       <p>Your latest posts displayed inside a nice slider. You can customize what the slider looks like.</p>
       <div class="blog-items-container">
@@ -244,7 +235,7 @@
         </div>
       </div>
     </div>
-    <div class="contact-container">
+    <div id="contact" class="contact-container">
       <h2>Get in touch</h2>
       <p>Big and mobile-optimized contact form integrated. All fields are customizable.</p>
       <form class="contact-form">

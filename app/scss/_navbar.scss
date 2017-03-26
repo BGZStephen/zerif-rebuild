@@ -43,6 +43,10 @@
   > a {
     text-decoration: none;
     color: $font-dark-grey;
+    transition: color 0.5s ease;
+  }
+  > a:hover {
+    color: $hr-blue;
   }
   > a > li {
     display: block;

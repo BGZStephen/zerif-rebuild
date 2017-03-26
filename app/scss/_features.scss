@@ -25,6 +25,22 @@
   width: 100%;
   > img {
     margin: 40px auto;
+    padding: 30px;
+    border: 8px solid white;
+    border-radius: 50%;
+    transition: border 0.5s ease;
+  }
+  .img--orange:hover {
+    border: 8px solid $hr-orange;
+  }
+  .img--green:hover {
+    border: 8px solid $hr-green;
+  }
+  .img--blue:hover {
+    border: 8px solid $hr-blue;
+  }
+  .img--yellow:hover {
+    border: 8px solid $hr-yellow;
   }
   > h3 {
     font-size: 1.1em;
@@ -43,4 +59,5 @@
     margin-left: 15px;
     margin-right: 15px;
   }
+
 }

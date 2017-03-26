@@ -74,7 +74,10 @@ h5 {
   list-style: none; }
   .navbar-menu-list > a {
     text-decoration: none;
-    color: #313131; }
+    color: #313131;
+    transition: color 0.5s ease; }
+  .navbar-menu-list > a:hover {
+    color: #3ab0e2; }
   .navbar-menu-list > a > li {
     display: block;
     padding: 15px 10px; }
@@ -131,10 +134,18 @@ h5 {
       margin: 15px 25px; } }
 
 .button--orange {
-  background: #e96656; }
+  background: #e96656;
+  transition: background 0.5s ease; }
+
+.button--orange:hover {
+  background: #cb4332; }
 
 .button--green {
-  background: #1e9e6b; }
+  background: #1e9e6b;
+  transition: background 0.5s ease; }
+
+.button--green:hover {
+  background: #069059; }
 
 .features-container {
   display: flex;
@@ -162,7 +173,19 @@ h5 {
   margin-bottom: 60px;
   width: 100%; }
   .features-item > img {
-    margin: 40px auto; }
+    margin: 40px auto;
+    padding: 30px;
+    border: 8px solid white;
+    border-radius: 50%;
+    transition: border 0.5s ease; }
+  .features-item .img--orange:hover {
+    border: 8px solid #e96656; }
+  .features-item .img--green:hover {
+    border: 8px solid #34d293; }
+  .features-item .img--blue:hover {
+    border: 8px solid #3ab0e2; }
+  .features-item .img--yellow:hover {
+    border: 8px solid #f7d861; }
   .features-item > h3 {
     font-size: 1.1em; }
   .features-item > hr {
@@ -196,7 +219,11 @@ h5 {
 .button-dark-green {
   background: #14a168;
   text-transform: uppercase;
-  margin: 40px auto 0; }
+  margin: 40px auto 0;
+  transition: background 0.5s ease; }
+
+.button-dark-green:hover {
+  background: #007345; }
 
 .about-container {
   display: flex;
@@ -317,6 +344,7 @@ h5 {
 
 .team-item {
   margin: 60px 0;
+  position: relative;
   width: 100%; }
   .team-item > img {
     height: 180px;
@@ -332,10 +360,35 @@ h5 {
     font-weight: 300; }
   .team-item > i {
     margin: 15px 5px;
-    color: #808080; }
+    color: #808080;
+    transition: color 0.5s ease; }
+  .team-item > i:hover {
+    color: #e96656; }
   @media (min-width: 768px) {
     .team-item {
       width: 25%; } }
+
+@media (min-width: 1024px) {
+  .team-item:before {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    color: white;
+    line-height: 2;
+    padding: 20px;
+    width: 80%;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque";
+    background: #272727;
+    z-index: 20;
+    transition: max-height 1s ease, opacity 0.2s ease; } }
+
+@media (min-width: 1024px) {
+  .team-item:hover:before {
+    max-height: 300px;
+    opacity: 1; } }
 
 .testimonials-container {
   display: flex;
